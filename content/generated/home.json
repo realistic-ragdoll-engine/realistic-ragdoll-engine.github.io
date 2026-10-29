@@ -2,8 +2,8 @@
   "enabled": true,
   "slug": "",
   "pageType": "home",
-  "title": "Realistic Ragdoll Engine Wiki: Roblox Guide & Tips",
-  "description": "Realistic Ragdoll Engine Roblox guide: find the official game, explore dummy physics, and get guides to updates, weapons, badges and game passes.",
+  "title": "Realistic Ragdoll Engine Roblox Wiki & Beginner Guide",
+  "description": "Realistic Ragdoll Engine Roblox wiki by No Knees!: learn how to play the physics sandbox, try dummy experiments, and find updates, weapons, badges and passes.",
   "navVisible": true,
   "hero": {
     "eyebrow": "Independent Roblox game guide · No Knees!",
@@ -29,7 +29,8 @@
         {
           "heading": "The correct game and creator",
           "paragraphs": [
-            "The official game is Realistic Ragdoll Engine by No Knees! on Roblox, place ID 81230874545623. Similar names such as Ragdoll Engine by Ragdoll Co and Ragdoll Reality belong to other developers; their controls, badges and purchases cannot be assumed to work here."
+            "The official game is Realistic Ragdoll Engine by No Knees! on Roblox, place ID 81230874545623. Similar names such as Ragdoll Engine by Ragdoll Co and Ragdoll Reality belong to other developers; their controls, badges and purchases cannot be assumed to work here.",
+            "An easy identity check: on Roblox, look for No Knees! as creator and confirm place 81230874545623 before reading a badge or shop guide. Names alone are unreliable because several unrelated ragdoll sandboxes use almost the same words. This is especially important when a search result mentions kill-based unlocks or multiplayer battles, which are not established features of this place."
           ]
         },
         {
@@ -48,13 +49,15 @@
         {
           "heading": "First experiment: compare a gentle hit and a fall",
           "paragraphs": [
-            "Compare reactions rather than inventing a damage number or a leaderboard. The official description emphasizes where and how impacts occur."
+            "Compare reactions rather than inventing a damage number or a leaderboard. The official description emphasizes where and how impacts occur.",
+            "For a useful first test, choose one map, observe a dummy at rest, then repeat a small impact from approximately the same position. Next try a higher fall and watch whether the dummy staggers, collapses or crawls. The purpose is to see how contact point and force change reactions, not to score damage. You do not need a premium weapon to understand the basic physics described by the developer."
           ]
         },
         {
           "heading": "Taser, heart restart and zombie revival",
           "paragraphs": [
-            "These interactions are documented on the official listing. Their exact keys and menu locations can change with platform and updates; follow the controls visible in your current Roblox client."
+            "These interactions are documented on the official listing. Their exact keys and menu locations can change with platform and updates; follow the controls visible in your current Roblox client.",
+            "If you prefer recovery mechanics to impact tests, explore the in-game tools that the developer describes as tasers, heart restarts and zombie revival. Start by checking the current controls menu for your device; a keyboard shortcut from another Roblox ragdoll game may not apply here. Treat each of these as a separate sandbox experiment, not a promise of an unlock or a bonus item."
           ]
         }
       ],
@@ -107,7 +110,8 @@
         {
           "heading": "Weapons and purchasable items",
           "paragraphs": [
-            "Browse the documented weapon and tool roster. Third-party price observations are labeled as October 27 snapshots, not today’s Roblox purchase price."
+            "Browse the documented weapon and tool roster. Third-party price observations are labeled as October 27 snapshots, not today’s Roblox purchase price.",
+            "Looking for Realistic Ragdoll Engine weapons? Our dedicated weapon list groups 15 reported October shop entries and their dated Robux prices, while the Game Passes guide compares named passes separately. The shop may change after an update. These two pages answer different questions: what an item is versus what a pass purchases."
           ]
         },
         {
@@ -185,6 +189,10 @@
     {
       "question": "Is this an official Roblox game site?",
       "answer": "No. It is an independent fan-maintained reference and links out to the real Roblox experience."
+    },
+    {
+      "question": "How do you play Realistic Ragdoll Engine for free?",
+      "answer": "Open the official No Knees! Roblox experience and press Play. The physics sandbox is available without purchasing the optional shop weapons or game passes; check the live Roblox listing for access conditions."
     }
   ],
   "screenshots": [],
