@@ -1,0 +1,880 @@
+[
+  {
+    "enabled": true,
+    "slug": "updates",
+    "pageType": "updates",
+    "navLabel": "Updates",
+    "title": "Realistic Ragdoll Engine Updates & Event Schedule",
+    "description": "Track Realistic Ragdoll Engine updates, Update 3 and the Halloween event. See verified event details, update history and what is still unconfirmed.",
+    "navVisible": true,
+    "parentSlug": "",
+    "hero": {
+      "eyebrow": "Realistic Ragdoll Engine · Independent Roblox guide",
+      "heading": "Realistic Ragdoll Engine Updates & Latest Events",
+      "lead": "October 2026 reports include Update 3 and a Halloween event. For the next Realistic Ragdoll Engine update, treat unofficial countdowns as estimates—not a confirmed developer schedule."
+    },
+    "sections": [
+      {
+        "id": "latest",
+        "heading": "What Is the Latest Realistic Ragdoll Engine Update?",
+        "intro": "Update 3 is reported as current in an October 28 article. Check the game’s Roblox event panel for the newest official announcement.",
+        "subsections": [
+          {
+            "heading": "Update 3 — confirmed facts and reported details",
+            "paragraphs": [
+              "AllThingsHow described Update 3 in its October 28 reporting. The article says more content and tools were added but does not offer a complete developer-signed itemized changelog; avoid inventing exact new weapon names."
+            ]
+          },
+          {
+            "heading": "What changed on the Roblox game page?",
+            "paragraphs": [
+              "The first-party game description still confirms physical bones and organs, map exploration, broken bones, medical tools and zombie revival. Do not label these baseline features as new to Update 3 without a dated official change list."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "halloween",
+        "heading": "Halloween Update: Event Status and Timing",
+        "intro": "A Halloween-themed update was listed around October 28. Exact rewards and a definitive feature list need direct event-panel confirmation.",
+        "subsections": [
+          {
+            "heading": "Halloween event window",
+            "paragraphs": [
+              "Third-party event listings reported a Halloween Update on October 28, 2026. Calendar entries can change or expire; refer to the official game for the live event time."
+            ]
+          },
+          {
+            "heading": "Are any Halloween rewards verified?",
+            "paragraphs": [
+              "No specific Halloween reward has been verified against a first-party item listing in this guide. Do not promise a free exclusive cosmetic or weapon."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "history",
+        "heading": "Realistic Ragdoll Engine Update History",
+        "intro": "Use the original date of a reported event instead of re-labeling old announcements as current.",
+        "subsections": [
+          {
+            "heading": "October 23 Update 2",
+            "paragraphs": [
+              "Update 2 was reported with additions to weapons, tools, maps and customization. The October 23–27 range is historical, not a current live countdown."
+            ]
+          },
+          {
+            "heading": "October 28 Update 3 and Halloween",
+            "paragraphs": [
+              "Multiple publications discussed a new version and Halloween-themed entry. Their headlines do not establish that both labels mean exactly the same release or identical content."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Dated October 2026 event and update reporting (not an official change log)",
+          "columns": [
+            "Event",
+            "Reported date",
+            "What the evidence supports"
+          ],
+          "rows": [
+            [
+              "Update 1",
+              "October 19, 2026",
+              "An early numbered release reported by AllThingsHow; full developer changelog not independently verified."
+            ],
+            [
+              "Update 2",
+              "October 23, 2026",
+              "Event reporting described new tools, maps and settings. This event is not still current by default."
+            ],
+            [
+              "Admin Abuse",
+              "October 25, 2026",
+              "An event listed in third-party coverage; reward terms and the live schedule require confirmation."
+            ],
+            [
+              "Update 3 / Halloween",
+              "October 28, 2026",
+              "Reported update and event around the same date; exact feature list remains partial."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "next",
+        "heading": "When Is the Next Realistic Ragdoll Engine Update?",
+        "intro": "There is no newly independently verified future event start time in the evidence used here.",
+        "subsections": [
+          {
+            "heading": "Confirmed schedule vs estimated cadence",
+            "paragraphs": [
+              "AllThingsHow described an approximate several-times-weekly cadence, but its next-date projections should not be represented as an official No Knees! promise."
+            ]
+          },
+          {
+            "heading": "How to check time zones",
+            "paragraphs": [
+              "Open the official Roblox game or developer event listing and use the timestamp shown there. Convert that confirmed timestamp to your local zone; avoid hardcoding an outdated countdown."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "related-guides",
+        "heading": "Where to Find Weapons and New Badges",
+        "intro": "If an update affects a purchase or a badge, verify the item and rule again before relying on an older article.",
+        "subsections": [
+          {
+            "heading": "Shop and pass changes",
+            "paragraphs": [
+              "Weapon price tables and gamepass lists are snapshots as of October 27; they are not an official update-3 price sheet."
+            ]
+          },
+          {
+            "heading": "Change log policy",
+            "paragraphs": [
+              "We label first-party statements, reported event dates and unconfirmed future predictions separately. Historical entries are retained for context."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "slug": "weapons",
+            "label": "Weapons & Tools",
+            "description": "Recorded tool roster with historical Robux prices"
+          },
+          {
+            "slug": "badges",
+            "label": "All 4 Badges",
+            "description": "Unlock status and verified clues"
+          },
+          {
+            "slug": "gamepasses",
+            "label": "Game Passes",
+            "description": "Compare five paid passes and dated prices"
+          }
+        ]
+      },
+      {
+        "id": "update-sources",
+        "heading": "Update Sources and Review Date",
+        "intro": "Source review date: October 29, 2026.",
+        "paragraphs": [
+          "Official experience: https://www.roblox.com/games/81230874545623/Realistic-Ragdoll-Engine",
+          "Update 3 reporting: https://allthings.how/realistic-ragdoll-engine-update-schedule/",
+          "Older event history: https://allthings.how/realistic-ragdoll-engine-events-schedule/"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is the latest Realistic Ragdoll Engine update?",
+        "answer": "An October 28, 2026 third-party report describes Update 3. Check the official game for any release after that date."
+      },
+      {
+        "question": "Does Update 3 add weapons?",
+        "answer": "An outside summary says it adds content, but exact names and amounts were not confirmed here by developer changelog."
+      },
+      {
+        "question": "When is the next update?",
+        "answer": "No future release time is independently confirmed. A predicted cadence is not an official timetable."
+      },
+      {
+        "question": "Was there a Halloween update?",
+        "answer": "An October 28 Halloween-themed entry was reported. Rewards and exact live event times still need first-party verification."
+      },
+      {
+        "question": "Where can I check new weapon prices?",
+        "answer": "Use the Weapons guide and confirm today’s Robux price inside Roblox before buying."
+      }
+    ],
+    "screenshots": [],
+    "relatedSlugs": [
+      "weapons",
+      "badges",
+      "gamepasses"
+    ],
+    "lastReviewed": "2026-10-29"
+  },
+  {
+    "enabled": true,
+    "slug": "weapons",
+    "pageType": "list",
+    "navLabel": "Weapons",
+    "title": "Realistic Ragdoll Engine Weapons List & Prices",
+    "description": "Explore Realistic Ragdoll Engine weapons and tools, from TNT and Katana to Gravity Gun and Minigun, with price sources and update notes.",
+    "navVisible": true,
+    "parentSlug": "",
+    "hero": {
+      "eyebrow": "Realistic Ragdoll Engine · Independent Roblox guide",
+      "heading": "Realistic Ragdoll Engine Weapons and Tools Guide",
+      "lead": "This Realistic Ragdoll Engine weapons reference lists 15 tools reported by RobloxDatabase on October 27, 2026. Prices are historical Robux snapshots, not live store quotes. Check the real game before spending."
+    },
+    "sections": [
+      {
+        "id": "list",
+        "heading": "All Documented Realistic Ragdoll Engine Weapons",
+        "intro": "The reference below is a third-party price snapshot dated October 27, 2026. These names are reported shop entries, not proof that all 15 are guns or that every one is currently for sale.",
+        "subsections": [
+          {
+            "heading": "Melee weapons and explosives",
+            "paragraphs": [
+              "Linked Sword and Katana appear alongside TNT, RPG and Nuke Tool. Price listings do not, by themselves, verify exact damage, splash radius, or how many targets a weapon can hit."
+            ]
+          },
+          {
+            "heading": "Ranged and special tools",
+            "paragraphs": [
+              "The dated list also contains AK-47, Minigun, Laser Rifle, Gravity Gun, Portal Gun, Black Hole Gun, Snake Sniper and Harpoon Gun. Labels such as “Gravity Gun” identify items, not independently verified gameplay statistics."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Reported Oct 27, 2026 (RobloxDatabase). Historical Robux prices; check current in-game shop.",
+          "columns": [
+            "Item or tool",
+            "Reported Robux price"
+          ],
+          "rows": [
+            [
+              "Balloon",
+              "9"
+            ],
+            [
+              "TNT",
+              "19"
+            ],
+            [
+              "Linked Sword",
+              "19"
+            ],
+            [
+              "Snake Sniper",
+              "24"
+            ],
+            [
+              "Katana",
+              "29"
+            ],
+            [
+              "Portal Gun",
+              "39"
+            ],
+            [
+              "Flamethrower",
+              "39"
+            ],
+            [
+              "AK-47",
+              "49"
+            ],
+            [
+              "RPG",
+              "50"
+            ],
+            [
+              "Harpoon Gun",
+              "69"
+            ],
+            [
+              "Gravity Gun",
+              "89"
+            ],
+            [
+              "Nuke Tool",
+              "99"
+            ],
+            [
+              "Laser Rifle",
+              "100"
+            ],
+            [
+              "Black Hole Gun",
+              "129"
+            ],
+            [
+              "Minigun",
+              "129"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "gadgets",
+        "heading": "Weapons vs Sandbox Gadgets: What Is Different?",
+        "intro": "The game is a physics sandbox; not every item belongs in a competitive fighting tier list.",
+        "subsections": [
+          {
+            "heading": "Taser and medical tools",
+            "paragraphs": [
+              "The official Roblox description explicitly mentions tasers, heart restarts and zombie revival. These are sandbox interactions, not numerical damage rankings."
+            ]
+          },
+          {
+            "heading": "Map-dependent experiments",
+            "paragraphs": [
+              "To compare results, try one tool on the same dummy and in the same environment before changing another factor. This is a testing method, not an assertion that a weapon has a fixed damage amount."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "buy",
+        "heading": "How to Buy Weapons Safely in Roblox",
+        "intro": "The user-visible Roblox prompt is the price authority; our October 27 third-party snapshot is informational only.",
+        "subsections": [
+          {
+            "heading": "Are Robux item prices permanent?",
+            "paragraphs": [
+              "No. The listed amounts are snapshots reported October 27, not a developer guarantee or a live connection to the shop."
+            ]
+          },
+          {
+            "heading": "Purchase type matters",
+            "paragraphs": [
+              "A game pass may grant a bundle or a special entitlement; a one-time product listing might not. See the Game Passes page for a separate product-category comparison."
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "heading": "Open the correct Roblox game",
+            "description": "Confirm No Knees! and place 81230874545623. Avoid purchases on similarly named Ragdoll games."
+          },
+          {
+            "heading": "Open the current store or item prompt",
+            "description": "Read the exact Robux amount, item type and description on the live Roblox screen. Older web tables may be out of date."
+          },
+          {
+            "heading": "Compare the purchase type",
+            "description": "A standalone tool listing and a game pass are different purchase types; do not assume they grant identical content until the listing says so."
+          }
+        ]
+      },
+      {
+        "id": "choose",
+        "heading": "Which Weapon Should You Try First?",
+        "intro": "Choose based on the experiment you want to run rather than a made-up best-weapon ranking.",
+        "subsections": [
+          {
+            "heading": "Try a simple launch or fall test",
+            "paragraphs": [
+              "Start with a repeatable environment and observe how a dummy responds to different impacts; the official game emphasizes location and force of hits."
+            ]
+          },
+          {
+            "heading": "Compare two weapons fairly",
+            "paragraphs": [
+              "Use the same map, dummy and approximate starting position. Avoid claiming a specific DPS or damage multiplier without reproducible evidence."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "new-weapons",
+        "heading": "Weapons Added in New Updates",
+        "intro": "Update coverage says the game receives new content, but the list above is a dated roster rather than an official Update 3 release note.",
+        "subsections": [
+          {
+            "heading": "Update 3 weapon details",
+            "paragraphs": [
+              "No independently verified line-by-line developer list is available from the cited Update 3 article. See the Updates guide before treating a named item as newly added."
+            ]
+          },
+          {
+            "heading": "Comparing Game Pass bundles",
+            "paragraphs": [
+              "Some recorded passes have names resembling store products. Their exact benefits and current prices require checking the separate pass details before buying."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "slug": "updates",
+            "label": "Latest Updates",
+            "description": "Update 3, Halloween and evidence-based release notes"
+          },
+          {
+            "slug": "gamepasses",
+            "label": "Game Passes",
+            "description": "Compare five paid passes and dated prices"
+          }
+        ]
+      },
+      {
+        "id": "weapon-sources",
+        "heading": "Weapon Data Sources",
+        "intro": "Source: https://robloxdatabase.com/games/realistic-ragdoll-engine/ (dated October 27, 2026). Last editorial review: October 29, 2026. Prices are not automatically updated.",
+        "paragraphs": [
+          "Official game: https://www.roblox.com/games/81230874545623/Realistic-Ragdoll-Engine"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which weapons are in Realistic Ragdoll Engine?",
+        "answer": "A dated October 27 reference lists Balloon, TNT, Linked Sword, Katana, Gravity Gun, Minigun and other shop tools. Recheck the current in-game catalogue."
+      },
+      {
+        "question": "Is the Gravity Gun free?",
+        "answer": "A third-party October 27 snapshot listed 89 Robux. This is not a verified current price."
+      },
+      {
+        "question": "What is the cheapest reported tool?",
+        "answer": "Balloon was listed at 9 Robux in a dated source. Confirm current availability and price inside Roblox."
+      },
+      {
+        "question": "Are Game Passes the same as weapon purchases?",
+        "answer": "Not necessarily. Their product types and entitlements can differ; see the Game Passes guide."
+      },
+      {
+        "question": "Which weapon is strongest?",
+        "answer": "Reliable comparative damage or physics test data was not available in the cited sources, so this guide does not invent a ranking."
+      }
+    ],
+    "screenshots": [],
+    "relatedSlugs": [
+      "updates",
+      "gamepasses",
+      "badges"
+    ],
+    "lastReviewed": "2026-10-29"
+  },
+  {
+    "enabled": true,
+    "slug": "badges",
+    "pageType": "guide",
+    "navLabel": "Badges",
+    "title": "Realistic Ragdoll Engine Badges: How to Get All 4",
+    "description": "Find all four Realistic Ragdoll Engine badges, including Against the Wind, Blast Off and Fed The Shark, with verified steps and clear source notes.",
+    "navVisible": true,
+    "parentSlug": "",
+    "hero": {
+      "eyebrow": "Realistic Ragdoll Engine · Independent Roblox guide",
+      "heading": "Realistic Ragdoll Engine Badges and Unlock Guide",
+      "lead": "Realistic Ragdoll Engine has four documented badges: Welcome, Against the Wind, Blast Off! and Fed The Shark!. The first is a joining reward; a public guide associates Against the Wind with a fan. The other two need in-game verification."
+    },
+    "sections": [
+      {
+        "id": "all-badges",
+        "heading": "All Realistic Ragdoll Engine Badges",
+        "intro": "These are the four names appearing in October 2026 game-specific references. A badge’s existence is not proof of its unlock trigger.",
+        "subsections": [
+          {
+            "heading": "Welcome — first visit",
+            "paragraphs": [
+              "Published listings describe a visit or joining requirement. Join the No Knees! version of the game, not another similar Roblox experience."
+            ]
+          },
+          {
+            "heading": "Against the Wind — launch a dummy with the fan",
+            "paragraphs": [
+              "A third-party game guide links this badge to launching a dummy with a fan. The map, fan location and exact condition have not been independently reproduced by this site."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Badge information from October 2026 public game references. Unconfirmed steps are not instructions.",
+          "columns": [
+            "Badge",
+            "Published clue",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Welcome",
+              "Visit / join the correct experience",
+              "Reported, straightforward"
+            ],
+            [
+              "Against the Wind",
+              "Launch a dummy with a fan",
+              "Public guide describes an action; confirm in game"
+            ],
+            [
+              "Blast Off!",
+              "“Bye!” in badge text",
+              "Exact trigger not verified"
+            ],
+            [
+              "Fed The Shark!",
+              "Shark-themed title or icon",
+              "Exact trigger not verified"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "blast-off",
+        "heading": "How to Get the Blast Off! Badge",
+        "intro": "No tested, repeatable unlock instruction is available in the evidence reviewed.",
+        "subsections": [
+          {
+            "heading": "What is publicly documented?",
+            "paragraphs": [
+              "The badge is named Blast Off! and public descriptions include “Bye!”. That is a clue, not proof that any particular launcher or rocket produces the badge."
+            ]
+          },
+          {
+            "heading": "In-game test plan to confirm",
+            "paragraphs": [
+              "Find an obvious launch mechanic in the current game and check the official badge information before acting. Record the map, exact object and whether the badge notification appears; publish an unlock step only after a successful test."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fed-shark",
+        "heading": "How to Get Fed The Shark!",
+        "intro": "The badge name suggests a shark-related task, but the exact location and trigger remain unconfirmed.",
+        "subsections": [
+          {
+            "heading": "Where does the shark clue come from?",
+            "paragraphs": [
+              "The public badge name or icon, not a verified player walkthrough. Do not claim that feeding or throwing a dummy into a specific shark is guaranteed to work."
+            ]
+          },
+          {
+            "heading": "Evidence required for unlock steps",
+            "paragraphs": [
+              "A reproducible game clip, official badge description or clearly sourced firsthand report should identify the map and exact action. Until then, the honest answer is that the condition is not verified."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "A Beginner-Friendly Badge Checklist",
+        "intro": "Use known information first and avoid repeating unproven internet guesses.",
+        "subsections": [
+          {
+            "heading": "Try a fan experiment first",
+            "paragraphs": [
+              "Unlike the unverified Blast Off!/shark clues, the fan action is at least explicitly documented as the purpose of Against the Wind."
+            ]
+          },
+          {
+            "heading": "Why a badge might not unlock",
+            "paragraphs": [
+              "You may be in the wrong game, the action may not satisfy the exact hidden trigger, or the badge panel may not have updated. Do not assume the requirement is identical across similarly named games."
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "heading": "Visit the correct Roblox game",
+            "description": "Join No Knees! / place 81230874545623 and look for Welcome in your Roblox badge list."
+          },
+          {
+            "heading": "Explore the fan experiment",
+            "description": "Locate a usable fan and try launching a dummy. The action is documented in a public guide, but a guaranteed result has not been validated here."
+          },
+          {
+            "heading": "Verify each remaining unlock",
+            "description": "Check the live official badge panel for Blast Off! and Fed The Shark! and only rely on tested steps."
+          }
+        ]
+      },
+      {
+        "id": "after-updates",
+        "heading": "Badges After New Updates",
+        "intro": "Badge descriptions and their availability may change; this October list is a snapshot.",
+        "subsections": [
+          {
+            "heading": "Do rarity percentages change?",
+            "paragraphs": [
+              "Rarity percentages are live platform statistics and vary over time, so this guide deliberately does not freeze a percentage into permanent content."
+            ]
+          },
+          {
+            "heading": "Related gadgets and weapons",
+            "paragraphs": [
+              "Fan experiments and launch tools are part of the sandbox context. The Weapons guide lists dated purchasable items but cannot prove any untested badge trigger."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "slug": "weapons",
+            "label": "Weapons & Tools",
+            "description": "Recorded tool roster with historical Robux prices"
+          },
+          {
+            "slug": "updates",
+            "label": "Latest Updates",
+            "description": "Update 3, Halloween and evidence-based release notes"
+          }
+        ]
+      },
+      {
+        "id": "badge-sources",
+        "heading": "Badge Sources",
+        "intro": "October 2026 public guides: https://newgame.co.jp/metaverse/en/roblox/81230874545623/realistic-ragdoll-engine/guide/ and https://newtoplay.com/games/realistic-ragdoll-engine . Editorial review: October 29, 2026."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How many badges are documented?",
+        "answer": "Four: Welcome, Against the Wind, Blast Off! and Fed The Shark!, according to October 2026 game-specific lists."
+      },
+      {
+        "question": "How do I get Against the Wind?",
+        "answer": "A public guide associates it with launching a dummy using a fan. Exact locations and reproducibility still require live verification."
+      },
+      {
+        "question": "How do I unlock Blast Off!?",
+        "answer": "Its exact trigger has not been independently confirmed. A “Bye!” description is not enough to make a reliable step-by-step claim."
+      },
+      {
+        "question": "How do I get Fed The Shark!?",
+        "answer": "The exact unlocking action remains unverified; consult the game’s live badge information and avoid guides that promise an untested shortcut."
+      },
+      {
+        "question": "Are these badges from Ragdoll Reality?",
+        "answer": "No. This reference is specifically about Realistic Ragdoll Engine by No Knees!, place 81230874545623."
+      }
+    ],
+    "screenshots": [],
+    "relatedSlugs": [
+      "weapons",
+      "updates"
+    ],
+    "lastReviewed": "2026-10-29"
+  },
+  {
+    "enabled": true,
+    "slug": "gamepasses",
+    "pageType": "database",
+    "navLabel": "Game Passes",
+    "title": "Realistic Ragdoll Engine Gamepasses & Prices",
+    "description": "Compare Realistic Ragdoll Engine gamepasses: VIP, Heavy Arsenal, Infection Pack, Explosion Pack and Unlimited Events, with dated prices and buying tips.",
+    "navVisible": true,
+    "parentSlug": "",
+    "hero": {
+      "eyebrow": "Realistic Ragdoll Engine · Independent Roblox guide",
+      "heading": "Realistic Ragdoll Engine Gamepasses: Price Guide",
+      "lead": "Five Game Pass names were reported in an October 27, 2026 third-party list. Prices from 34 to 299 Robux are historical snapshots; check the exact pass benefits and live Roblox purchase prompt before buying."
+    },
+    "sections": [
+      {
+        "id": "all-passes",
+        "heading": "All Realistic Ragdoll Engine Game Passes",
+        "intro": "These five names and amounts are from a dated third-party snapshot, not a live merchant feed or proof of current purchase entitlements.",
+        "subsections": [
+          {
+            "heading": "Explosion Pack and Heavy Arsenal",
+            "paragraphs": [
+              "Dated snapshots list these pass names at 34 and 79 Robux respectively. Do not infer what every tool bundle contains from the name alone."
+            ]
+          },
+          {
+            "heading": "VIP, Infection Pack and Unlimited Events",
+            "paragraphs": [
+              "The same source listed 199, 200 and 299 Robux. The official in-game purchase screen is the final authority for exact privileges and price."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Reported Oct 27, 2026 (RobloxDatabase). Historical Robux values, not live offers.",
+          "columns": [
+            "Game pass",
+            "Reported Robux",
+            "What is verified"
+          ],
+          "rows": [
+            [
+              "Explosion Pack",
+              "34",
+              "Listed pass name; detailed entitlement not independently verified"
+            ],
+            [
+              "Heavy Arsenal",
+              "79",
+              "Listed pass name; exact bundle contents unverified"
+            ],
+            [
+              "VIP",
+              "199",
+              "Listed pass name; current privileges unverified"
+            ],
+            [
+              "Infection Pack",
+              "200",
+              "Listed pass name; contents unverified"
+            ],
+            [
+              "Unlimited Events",
+              "299",
+              "Listed pass name; exact scope unverified"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vs-products",
+        "heading": "Game Passes vs One-Time Shop Products",
+        "intro": "Do not compare prices until you have checked whether two similarly named entries grant the same benefits.",
+        "subsections": [
+          {
+            "heading": "Heavy Arsenal and Explosion Pack price snapshots",
+            "paragraphs": [
+              "Two source-dated rows suggest pass and product listings may have different prices. A lower price is not a bargain claim unless the access is actually the same."
+            ]
+          },
+          {
+            "heading": "Unlimited Events pass vs shop listing",
+            "paragraphs": [
+              "A similarly named product was reportedly priced differently in October. Without verifying the benefits and permanence, no “saving” is defensible."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Historical pricing comparisons — entitlements are not verified as equivalent.",
+          "columns": [
+            "Similar-sounding listings",
+            "Pass snapshot",
+            "Other product snapshot",
+            "Important caution"
+          ],
+          "rows": [
+            [
+              "Heavy Arsenal",
+              "79 Robux",
+              "149 Robux",
+              "May not grant the same items"
+            ],
+            [
+              "Explosion Pack",
+              "34 Robux",
+              "65 Robux",
+              "Product rights not verified"
+            ],
+            [
+              "Unlimited Events",
+              "299 Robux",
+              "255 Robux",
+              "Names alone do not establish equal access"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "choose",
+        "heading": "Which Game Pass Is Right for You?",
+        "intro": "There is no substantiated universal “best” pass. Consider what you actually want to experiment with.",
+        "subsections": [
+          {
+            "heading": "First check what you actually use",
+            "paragraphs": [
+              "If you prefer map physics experiments, buying a themed tool bundle may offer little value. If you use a class of gadgets regularly, inspect its exact official pass perks first."
+            ]
+          },
+          {
+            "heading": "Check what the prompt says you own permanently",
+            "paragraphs": [
+              "The live Roblox prompt should explain whether access is permanent, consumable or otherwise limited. This guide does not assume different product classes are interchangeable."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "buy",
+        "heading": "How to Buy a Game Pass on Roblox",
+        "intro": "Use only the correct Roblox experience for No Knees! when evaluating an optional purchase.",
+        "subsections": [
+          {
+            "heading": "Confirm the price in Robux",
+            "paragraphs": [
+              "Robux is Roblox’s virtual currency; amounts displayed here are historical Robux snapshots, not fiat prices or guaranteed rates."
+            ]
+          },
+          {
+            "heading": "Avoid wrong-game purchases",
+            "paragraphs": [
+              "Do not buy a similarly named Ragdoll Engine pass expecting it to work in the game by No Knees! unless Roblox explicitly confirms shared entitlements."
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "heading": "Open the official game",
+            "description": "Go to the Roblox listing for place 81230874545623; confirm the creator and game name."
+          },
+          {
+            "heading": "Inspect the game pass listing",
+            "description": "Check the pass name, price and description on Roblox. Treat historical web comparisons as background, not a checkout quote."
+          },
+          {
+            "heading": "Decide with the actual benefits in view",
+            "description": "Make sure the description covers the tool or event access you want, and do not buy from a third-party link claiming free Robux."
+          }
+        ]
+      },
+      {
+        "id": "pass-changes",
+        "heading": "Pass Changes After Updates",
+        "intro": "Game passes can change; compare the current store before and after an update rather than automatically trusting old amounts.",
+        "subsections": [
+          {
+            "heading": "Price and feature change log",
+            "paragraphs": [
+              "Current verified version: this page documents source-dated October 27 prices. No official pass-ID-level change log was obtained in this review."
+            ]
+          },
+          {
+            "heading": "Optional purchases are not required to join",
+            "paragraphs": [
+              "The official Roblox game provides a Play entry. Nothing in the evidence establishes that you must buy all five passes to access the solo sandbox."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "slug": "weapons",
+            "label": "Weapons & Tools",
+            "description": "Recorded tool roster with historical Robux prices"
+          },
+          {
+            "slug": "updates",
+            "label": "Latest Updates",
+            "description": "Update 3, Halloween and evidence-based release notes"
+          }
+        ]
+      },
+      {
+        "id": "pass-sources",
+        "heading": "Pass Data Sources",
+        "intro": "Dated reference: https://robloxdatabase.com/games/realistic-ragdoll-engine/ and https://newtoplay.com/games/realistic-ragdoll-engine . Editorial review: October 29, 2026; live Roblox store controls the final price and eligibility."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How many Game Passes are listed?",
+        "answer": "Five in the October 27, 2026 snapshot: Explosion Pack, Heavy Arsenal, VIP, Infection Pack and Unlimited Events."
+      },
+      {
+        "question": "How much is VIP in Realistic Ragdoll Engine?",
+        "answer": "VIP appeared as 199 Robux in an October 27 third-party snapshot; check the current price on Roblox."
+      },
+      {
+        "question": "Is Heavy Arsenal cheaper as a pass?",
+        "answer": "Historical entries differed in price, but the access rights may not match. Compare the actual pass and shop item descriptions before deciding."
+      },
+      {
+        "question": "Are these passes mandatory?",
+        "answer": "No evidence says all passes are required to access the solo physics sandbox. Purchases are optional additions."
+      },
+      {
+        "question": "Can I use passes from a different Ragdoll game?",
+        "answer": "Do not assume that purchases from another developer’s Roblox experience carry over to No Knees! Realistic Ragdoll Engine."
+      }
+    ],
+    "screenshots": [],
+    "relatedSlugs": [
+      "weapons",
+      "updates"
+    ],
+    "lastReviewed": "2026-10-29"
+  }
+]
