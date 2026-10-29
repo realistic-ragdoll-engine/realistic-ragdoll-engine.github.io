@@ -110,7 +110,7 @@ jobs:
                     title: document.title,
                     canonical: document.querySelector('link[rel="canonical"]')?.href,
                     description: document.querySelector('meta[name="description"]')?.content,
-                    navLinks: document.querySelectorAll('header nav a[href]').length,
+                    navLinks: document.querySelectorAll('.skin-header nav a[href]').length,
                     heroHeight: hero?.getBoundingClientRect().height ?? 0,
                     imageOk: !image || (image.complete && image.naturalWidth > 0),
                     footerLinks: document.querySelectorAll('footer a[href]').length,
