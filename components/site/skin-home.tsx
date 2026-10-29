@@ -46,16 +46,34 @@ export function SkinHomePage() {
       <JsonLd data={homeSchemas(homePage)} />
       <main className={`skin-home skin-home-${skin}`}>
         {skin === "resource" ? (
-          <section className="skin-resource-hero site-container">
-            <p className="eyebrow">{homePage.hero.eyebrow}</p>
-            <h1>{homePage.hero.heading}</h1>
-            <p className="section-lead">{homePage.hero.lead}</p>
-            <Actions />
-            <div className="skin-quick-links">
+          <section className="skin-resource-hero site-container" aria-labelledby="home-title">
+            <div className="skin-resource-hero-grid">
+              <div className="min-w-0">
+                <p className="eyebrow">{homePage.hero.eyebrow}</p>
+                <h1 id="home-title">{homePage.hero.heading}</h1>
+                <p className="section-lead">{homePage.hero.lead}</p>
+                {homePage.hero.supportingText ? (
+                  <p className="skin-hero-support">{homePage.hero.supportingText}</p>
+                ) : null}
+                <Actions />
+              </div>
+              <figure className="skin-hero-image">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={assetPath(siteConfig.assets.cover)}
+                  alt="Realistic Ragdoll Engine Roblox physics sandbox gameplay"
+                  width="960"
+                  height="600"
+                  loading="eager"
+                />
+                <figcaption>Realistic Ragdoll Engine · Roblox physics sandbox</figcaption>
+              </figure>
+            </div>
+            <nav className="skin-quick-links" aria-label="Explore game guides">
               {pages.map((page) => (
                 <Link key={page.slug} href={routePath(page.slug)}>{page.navLabel}</Link>
               ))}
-            </div>
+            </nav>
           </section>
         ) : null}
 

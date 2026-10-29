@@ -52,3 +52,88 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify five live pages, SEO and responsive layouts
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://realistic-ragdoll-engine.github.io"
+          for attempt in $(seq 1 12); do
+            if curl -fsSL --max-time 20 "$URL/" -o /tmp/rre-live-home.html && grep -q 'Realistic Ragdoll Engine' /tmp/rre-live-home.html; then
+              break
+            fi
+            if [ "$attempt" -eq 12 ]; then echo "Live site unavailable"; exit 1; fi
+            sleep 5
+          done
+          for path in / /updates/ /weapons/ /badges/ /gamepasses/; do
+            curl -fsSL --retry 3 --max-time 25 "$URL$path" -o /tmp/rre-live-page.html
+            grep -q '<h1' /tmp/rre-live-page.html
+            grep -q 'canonical' /tmp/rre-live-page.html
+            grep -q 'name="description"' /tmp/rre-live-page.html
+            grep -q 'G-TEKDVNFQ94' /tmp/rre-live-page.html
+            echo "LIVE HTTP + SEO OK $path"
+          done
+          curl -fsSL "$URL/sitemap.xml" -o /tmp/rre-sitemap.xml
+          curl -fsSL "$URL/robots.txt" -o /tmp/rre-robots.txt
+          for path in /updates/ /weapons/ /badges/ /gamepasses/; do
+            grep -q "$URL$path" /tmp/rre-sitemap.xml
+          done
+          grep -q 'sitemap.xml' /tmp/rre-robots.txt
+          CHROME_PATH="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME_PATH" ]; then echo "No browser found for visual QA"; exit 1; fi
+          export CHROME_PATH
+          npm install --prefix /tmp/rre-browser-qa --no-save --package-lock=false --no-audit --no-fund playwright-core@1.56.1
+          cd /tmp/rre-browser-qa
+          node --input-type=module <<'NODE'
+          import { chromium } from 'playwright-core';
+          const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROME_PATH, args: ['--no-sandbox'] });
+          const origin = 'https://realistic-ragdoll-engine.github.io';
+          const routes = ['/', '/updates/', '/weapons/', '/badges/', '/gamepasses/'];
+          try {
+            for (const width of [375, 768, 1440]) {
+              const context = await browser.newContext({ viewport: { width, height: 900 }, deviceScaleFactor: 1 });
+              for (const route of routes) {
+                const page = await context.newPage();
+                const jsErrors = [];
+                page.on('pageerror', error => jsErrors.push(error.message));
+                const response = await page.goto(origin + route, { waitUntil: 'domcontentloaded', timeout: 30000 });
+                await page.locator('h1').waitFor();
+                await page.evaluate(() => document.fonts.ready);
+                const metrics = await page.evaluate(() => {
+                  const hero = document.querySelector('.skin-resource-hero, .skin-article-hero');
+                  const image = document.querySelector('.skin-hero-image img');
+                  return {
+                    viewport: window.innerWidth,
+                    pageWidth: document.documentElement.scrollWidth,
+                    h1: document.querySelectorAll('h1').length,
+                    h2: document.querySelectorAll('h2').length,
+                    title: document.title,
+                    canonical: document.querySelector('link[rel="canonical"]')?.href,
+                    description: document.querySelector('meta[name="description"]')?.content,
+                    navLinks: document.querySelectorAll('header nav a[href]').length,
+                    heroHeight: hero?.getBoundingClientRect().height ?? 0,
+                    imageOk: !image || (image.complete && image.naturalWidth > 0),
+                    footerLinks: document.querySelectorAll('footer a[href]').length,
+                  };
+                });
+                const fail = (message) => { throw new Error(`${route} @${width}px: ${message}; ${JSON.stringify(metrics)}`); };
+                if (response?.status() !== 200) fail('HTTP status');
+                if (metrics.pageWidth > width + 2) fail('horizontal overflow');
+                if (metrics.h1 !== 1 || metrics.h2 < 2) fail('heading hierarchy');
+                if (!metrics.description || !metrics.canonical?.startsWith(origin)) fail('SEO head');
+                if (metrics.navLinks !== 4 || metrics.footerLinks < 4) fail('navigation/footer links');
+                if (metrics.heroHeight > 1250) fail('oversized hero');
+                if (!metrics.imageOk) fail('broken hero image');
+                if (jsErrors.length) fail('JavaScript error: ' + jsErrors.join('; '));
+                if (width === 375 && route === '/') {
+                  const menu = page.getByRole('button', { name: 'Open navigation' });
+                  await menu.click();
+                  if (!(await page.getByRole('navigation', { name: 'Primary navigation' }).isVisible())) fail('mobile navigation toggle');
+                }
+                console.log(`BROWSER OK ${width}px ${route} width=${metrics.pageWidth} hero=${Math.round(metrics.heroHeight)}px`);
+                await page.close();
+              }
+              await context.close();
+            }
+          } finally { await browser.close(); }
+          NODE

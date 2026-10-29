@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Search, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -52,15 +52,11 @@ export function SkinHeader({ links, skin }: { links: InternalLink[]; skin: Theme
   if (skin === "resource") {
     return (
       <header className="skin-header skin-header-resource">
-        <div className="site-container skin-header-top">
+        <div className="site-container skin-resource-top">
           {brand}
-          <form className="skin-search" role="search" onSubmit={(event) => event.preventDefault()}>
-            <Search size={16} aria-hidden="true" />
-            <input type="search" placeholder="Search guides" aria-label="Search guides" />
-          </form>
           {toggle}
+          {nav}
         </div>
-        <div className="site-container">{nav}</div>
       </header>
     );
   }
