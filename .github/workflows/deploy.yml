@@ -37,6 +37,40 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm run build
+      - name: Validate final static HTML titles
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import html
+          import json
+          import re
+
+          home = json.loads(Path("content/generated/home.json").read_text(encoding="utf-8"))
+          guides = json.loads(Path("content/generated/pages.json").read_text(encoding="utf-8"))
+          checked = 0
+          for entry in [home, *guides]:
+              if not entry.get("enabled", True):
+                  continue
+              slug = entry.get("slug", "").strip("/")
+              file = Path("out") / slug / "index.html"
+              if not file.is_file():
+                  raise SystemExit(f"Missing built HTML: {file}")
+              source = file.read_text(encoding="utf-8")
+              tags = re.findall(r"<title(?:\\s[^>]*)?>(.*?)</title>", source, flags=re.I | re.S)
+              if len(tags) != 1:
+                  raise SystemExit(f"Expected one title in {file}; found {len(tags)}")
+              title = html.unescape(tags[0].strip())
+              if title != entry["title"]:
+                  raise SystemExit(f"Rendered title mismatch at {file}: {title!r} != {entry['title']!r}")
+              if len(title) > 60:
+                  raise SystemExit(f"Title exceeds 60 chars: {file}: {len(title)}")
+              if title.lower().count("realistic ragdoll engine") != 1:
+                  raise SystemExit(f"Duplicated or missing game name in title: {file}")
+              checked += 1
+              print(f"BUILT TITLE OK /{slug + '/' if slug else ''}: {len(title)} chars: {title}")
+          if checked != 5:
+              raise SystemExit(f"Expected 5 launch pages, checked {checked}")
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -71,6 +105,20 @@ jobs:
             grep -q 'canonical' /tmp/rre-live-page.html
             grep -q 'name="description"' /tmp/rre-live-page.html
             grep -q 'G-TEKDVNFQ94' /tmp/rre-live-page.html
+            python3 - <<'PY'
+          import html
+          import re
+          from pathlib import Path
+
+          markup = Path("/tmp/rre-live-page.html").read_text(encoding="utf-8")
+          tags = re.findall(r"<title(?:\\s[^>]*)?>(.*?)</title>", markup, flags=re.I | re.S)
+          if len(tags) != 1:
+              raise SystemExit(f"Live page has {len(tags)} title tags")
+          title = html.unescape(tags[0].strip())
+          if len(title) > 60 or title.lower().count("realistic ragdoll engine") != 1:
+              raise SystemExit(f"Invalid live title ({len(title)} chars): {title}")
+          print(f"LIVE TITLE OK {len(title)} chars: {title}")
+          PY
             echo "LIVE HTTP + SEO OK $path"
           done
           curl -fsSL "$URL/sitemap.xml" -o /tmp/rre-sitemap.xml

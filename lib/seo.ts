@@ -18,7 +18,8 @@ export function pageMetadata(page: MetadataPage): Metadata {
   const shouldFollow = isLegal ? true : shouldIndex;
 
   return {
-    title: page.title,
+    // Page titles are already complete, so bypass the root title suffix template.
+    title: { absolute: page.title },
     description: page.description,
     alternates: { canonical },
     robots: {
