@@ -183,3 +183,60 @@ jobs:
             }
           } finally { await browser.close(); }
           NODE
+
+      - name: Verify real Adsterra GET CODE requests without mocks
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /tmp/rre-browser-qa
+          node --input-type=module <<'NODE'
+          import { chromium } from 'playwright-core';
+          const ads = {
+            desktop: 'https://bauval.org/22/3fde15958ca66b1eb5440e4d4b7c50c7',
+            mobile: 'https://bauval.org/22/1dfd821bc68125030574a537f395eebf',
+            native: 'https://bauval.org/21/b5066153047e0112d98acf58660c25b1',
+            social: 'https://bauval.org/14/fd66bad1bef02d7db26401ad346d3410',
+          };
+          const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROME_PATH, args: ['--no-sandbox'] });
+          try {
+            for (const width of [375, 1440]) {
+              const context = await browser.newContext({ viewport: { width, height: 900 }, deviceScaleFactor: 1 });
+              for (const route of ['/', '/updates/']) {
+                const page = await context.newPage();
+                const requests = [], responses = [], failures = [];
+                page.on('request', req => {
+                  if (req.url().startsWith('https://bauval.org/')) requests.push(req.url());
+                });
+                page.on('response', r => {
+                  if (r.url().startsWith('https://bauval.org/')) responses.push({ url: r.url(), status: r.status() });
+                });
+                page.on('requestfailed', req => {
+                  if (req.url().startsWith('https://bauval.org/')) failures.push({ url: req.url(), error: req.failure()?.errorText });
+                });
+                const response = await page.goto('https://realistic-ragdoll-engine.github.io' + route, { waitUntil: 'domcontentloaded', timeout: 30000 });
+                await page.locator('iframe.adsterra-banner-frame').waitFor({ timeout: 10000 });
+                await page.waitForTimeout(8000);
+                const state = await page.evaluate(() => ({
+                  banner: document.querySelectorAll('iframe.adsterra-banner-frame').length,
+                  native: document.querySelectorAll('[data-native-ad-slot]').length,
+                  social: document.querySelectorAll('script[data-rre-social-bar]').length,
+                  device: document.querySelector('[data-banner-device]')?.getAttribute('data-banner-device'),
+                  width: document.documentElement.scrollWidth,
+                }));
+                const chosen = width < 768 ? 'mobile' : 'desktop';
+                const other = width < 768 ? 'desktop' : 'mobile';
+                const matching = (src) => requests.filter(url => url.split('?')[0] === src).length;
+                if (response?.status() !== 200 || state.banner !== 1 || state.native !== 1 || state.social !== 1 || state.device !== chosen) {
+                  throw new Error(`Ad slot DOM mismatch ${route} ${width}px: ${JSON.stringify(state)}`);
+                }
+                if (state.width > width + 2) throw new Error(`Ad overflow ${route} ${width}px ${state.width}`);
+                if (matching(ads[chosen]) !== 1 || matching(ads[other]) !== 0 || matching(ads.native) !== 1 || matching(ads.social) !== 1) {
+                  throw new Error(`Real ad script request mismatch ${route} ${width}px: ${JSON.stringify({ requests, responses, failures })}`);
+                }
+                console.log('REAL AD REQUESTS OK', width, route, JSON.stringify({ requests, responses, failures }));
+                await page.close();
+              }
+              await context.close();
+            }
+          } finally { await browser.close(); }
+          NODE
