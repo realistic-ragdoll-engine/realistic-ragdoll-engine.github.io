@@ -7,8 +7,9 @@ export function NativeAdClient({ scriptUrl, containerId }: { scriptUrl: string; 
 
   useEffect(() => {
     const host = hostRef.current;
-    if (!host) return;
+    if (!host || host.querySelector('script[data-rre-native-ad]')) return;
 
+    // The native target must exist before the original provider script executes.
     const container = document.createElement("div");
     container.id = containerId;
     host.appendChild(container);
@@ -16,14 +17,16 @@ export function NativeAdClient({ scriptUrl, containerId }: { scriptUrl: string; 
     const script = document.createElement("script");
     script.async = true;
     script.src = scriptUrl;
-    script.dataset.cfasync = "false";
-    script.dataset.gameWikiNativeAd = containerId;
-    host.insertBefore(script, container);
-
-    return () => {
-      host.replaceChildren();
-    };
+    script.setAttribute("data-cfasync", "false");
+    script.setAttribute("data-rre-native-ad", "1");
+    host.appendChild(script);
+    // No arbitrary no-fill timeout: only DOM unmount removes this instance.
   }, [containerId, scriptUrl]);
 
-  return <div ref={hostRef} data-native-ad-slot />;
+  return (
+    <div className="adsterra-native-placement" aria-label="Sponsored content">
+      <span className="adsterra-label">Advertisement / Sponsored</span>
+      <div ref={hostRef} data-native-ad-slot />
+    </div>
+  );
 }

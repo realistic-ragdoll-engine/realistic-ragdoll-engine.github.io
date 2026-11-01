@@ -659,3 +659,43 @@ html[data-skin="resource"] button:focus-visible {
   html[data-skin="resource"] .skin-resource-hero .button-primary,
   html[data-skin="resource"] .skin-resource-hero .button-secondary { justify-content: center; }
 }
+
+
+/* Adsterra slots: scoped to advertising, with layout preserved. */
+.adsterra-banner-placement {
+  width: 100%;
+  min-height: 120px;
+  margin: 1rem auto 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.adsterra-label {
+  display: block;
+  font-size: .68rem;
+  line-height: 1.25;
+  letter-spacing: .05em;
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  margin-bottom: .4rem;
+}
+.adsterra-banner-frame {
+  display: block;
+  border: 0;
+  max-width: 100%;
+  flex-shrink: 0;
+  background: transparent;
+}
+.adsterra-native-placement {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 1.5rem auto 2rem;
+  overflow-wrap: anywhere;
+}
+.adsterra-native-placement [data-native-ad-slot] { min-width: 0; max-width: 100%; }
+@media (max-width: 767px) {
+  .adsterra-banner-placement { min-height: 80px; }
+}

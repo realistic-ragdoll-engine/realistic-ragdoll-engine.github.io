@@ -1,6 +1,7 @@
 import { CalendarCheck2 } from "lucide-react";
 import Link from "next/link";
 import { NativeAdSlot } from "@/components/integrations/native-ad-slot";
+import { ResponsiveAdBanner } from "@/components/integrations/responsive-ad-banner";
 import type { SeoPageDefinition } from "@/config/types";
 import { siteSkin } from "@/config/skin";
 import { getRelatedPages } from "@/content/registry";
@@ -33,10 +34,12 @@ export function SkinSeoPage({ page }: { page: SeoPageDefinition }) {
             </p>
           </div>
         </header>
-        <div className="site-container"><NativeAdSlot /></div>
+        <ResponsiveAdBanner />
         <div className={`site-container skin-article-grid ${showAside ? "has-aside" : ""}`}>
           <article>
-            <PageSections sections={page.sections} />
+            <PageSections sections={page.sections.slice(0, 1)} />
+            <NativeAdSlot />
+            <PageSections sections={page.sections.slice(1)} />
             {page.faq?.length ? <Faq items={page.faq} /> : null}
           </article>
           {showAside ? (
