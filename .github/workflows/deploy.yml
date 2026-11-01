@@ -188,6 +188,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          CHROME_PATH="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$CHROME_PATH"
+          export CHROME_PATH
           cd /tmp/rre-browser-qa
           node --input-type=module <<'NODE'
           import { chromium } from 'playwright-core';
